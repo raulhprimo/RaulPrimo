@@ -1,0 +1,39 @@
+html{
+  scroll-behavior: smooth;
+  background-color:#FFF8DC ;
+}
+*{
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  width: 14px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #FFF8DC;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FFD700;
+  border-radius: 20px;
+  border: 3px solid #292929
+}
+
+h2{
+  font-size: 30px;
+}
+
+@media(max-width: 450px){
+  p, input, textarea,   #navbar-list li a{
+    font-size: 1.2rem;
+  }
+}
+@media(max-width: 750px){
+  p, input, textarea,    li a{
+    font-size: 1.2rem;
+  }
+}

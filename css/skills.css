@@ -1,0 +1,125 @@
+/* skills */
+#skills-section {
+  margin-top: -50px;
+  background-color: #2b323c;
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#skills-section .container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.skills-container {
+  flex: 1 1 1;
+  text-align: center;
+  padding: 60px 25px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 350px;
+}
+
+.central {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+
+.skills-container h3{
+  height: 60px;
+  padding: 15px;
+  margin-bottom: 25px;  
+  border-top: 1px solid #FFF8DC;
+  border-left: 1px solid #FFF8DC;
+  border-bottom: 1px solid #FFF8DC;
+  border-right: 1px solid #FFF8DC;
+  border-radius: 2px;
+  font-weight: 600;
+  color: #FFC300;
+  font-size: 25px;
+  padding-bottom: 60px;
+}
+
+.container h3:hover{
+  background-color: #FFC300;
+  color: #fff;
+}
+
+.skills-container .subtitle{
+  color: #FFD700;
+  font-weight: 300;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  line-height: 25px;
+  font-size: 20px;
+}
+
+.skills-container p{
+  line-height: 25px;
+  color: white;
+  font-weight: 100;
+}
+
+@media(min-width: 450px) and (max-width: 750px){
+  p, input, textarea,   #navbar-list li a{
+    font-size: 1.2rem;
+  }
+
+  #skills-section{
+    margin-top: -35px;
+    width: 90%;
+  }
+
+  #skills-section .container{
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto; 
+  }
+
+  .skills-container h3, .skills-container .subtitle{
+    font-size: 1.3rem;
+  }
+
+  .skills-container{
+    padding: 25px;
+    width: 85%;
+  }
+
+  .skills-container.central{
+    border: none;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1276px){
+  #navbar-list li a{
+    font-size: 1.2rem;
+  }
+  #skills-section{
+    margin-top: -35px;
+  }
+
+  #skills-section .container{
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto; 
+  }
+
+  .skills-container h3, .skills-container .subtitle{
+    font-size: 1.3rem;
+  }
+
+  .skills-container{
+    padding: 25px;
+    width: 600px;
+  }
+
+  .skills-container.central{
+    border: none;
+    display: inline-block;
+  }
+}
