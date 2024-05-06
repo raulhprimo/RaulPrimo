@@ -82,14 +82,9 @@
   #navbar h2{
     display: none;
   }
-  #navbar img{
-    top: 9px;
-  }
   .log-name{
     display: none;
-    
   }
-
   #navbar{
     margin-right: auto;
     margin-left: auto;
@@ -98,5 +93,16 @@
   } 
   #navbar-list>a{
     text-transform: uppercase;
+  }
+}
+
+@media (min-width: 286px) and (max-width: 449px) {
+  #navbar{
+    display: block;
+  }
+
+  #navbar-list>a{
+    text-transform: initial;
+    display: inline-block;
   }
 }

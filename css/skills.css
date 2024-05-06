@@ -65,6 +65,31 @@
   font-weight: 100;
 }
 
+@media (min-width: 286px) and (max-width: 449px) {
+  #skills-section{
+    margin-top: -35px;
+    width: 90%;
+  }
+
+  #skills-section .container{
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto; 
+  }
+  .skills-container h3, .skills-container .subtitle{
+    font-size: 1.3rem;
+  }
+
+  .skills-container{
+    padding: 25px;
+    width: 85%;
+  }
+
+  .skills-container.central{
+    border: none;
+  }
+}
+
 @media(min-width: 450px) and (max-width: 750px){
   p, input, textarea,   #navbar-list li a{
     font-size: 1.2rem;

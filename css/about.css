@@ -44,3 +44,14 @@
     display: none;
   }
 }
+
+@media (min-width: 286px) and (max-width: 449px) {
+  .about-section h2{
+    font-size: 20px;
+    padding-bottom: 30px;
+  }
+  .about-section{
+    height: 35vh;
+    padding-top: 40px;
+  }
+}
