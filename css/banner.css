@@ -9,6 +9,10 @@
   justify-content: center;
 }
 
+.main-banner br{
+  display: none;
+}
+
 /* animate text */
 
 .animate-txt{
@@ -86,6 +90,9 @@
     padding-top: 5vh;
     padding-bottom: 10vh;
   }
+  .main-banner br{
+    display: block;
+  }
 }
 
 @media(min-width: 450px) and (max-width: 750px){
@@ -100,6 +107,10 @@
     padding-top: 5vh;
     padding-bottom: 10vh;
   }
+
+  .main-banner br{
+    display: block;
+  }
 }
 
 @media (min-width: 286px) and (max-width: 449px) {
@@ -108,5 +119,9 @@
   }
   .animate-txt span{
     font-size: 1.60rem;
+  }
+
+  .main-banner br{
+    display: block;
   }
 }
