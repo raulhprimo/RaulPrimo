@@ -1,0 +1,126 @@
+.header{
+  background: #2b323c;
+  padding-inline: 16px;
+  transition: 0.6s;
+}
+
+.header.active{
+  position: sticky;
+  top: 0;
+  background-color: #FFD700;
+  z-index: 300;
+}
+
+.nav{
+  max-width: 1280px;
+  min-height: 50px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+}
+
+.nav a{
+  text-decoration: none;
+}
+
+.logo{
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.nav-list{
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-list a{
+  font-size: 18px;
+  color: #fff;
+  padding-block: 16px;
+}
+
+.hamburguer{
+  display: none;
+  border: none;
+  background: none;
+  border-top: 3px solid #fff;
+  cursor: pointer;
+}
+
+.hamburguer::before, .hamburguer::after{
+  content: " ";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  margin-top: 5px;
+  position: relative;
+}
+
+@media (min-width: 286px) and (max-width: 750px) {
+  .hamburguer{
+    display: block;
+    z-index: 2;
+  }
+
+  .nav-list{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #FFD700; 
+    clip-path: circle(100px at 90%  -30%);
+    transition: 1s ease-out;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+    pointer-events: none;
+  }
+  
+  .nav-list a{
+    font-size: 24px;
+    opacity: 0;
+    text-transform: uppercase;
+  }
+  .nav-list li:nth-child(1) a{
+    transition: 0.5s 0.2s;
+  }
+  .nav-list li:nth-child(2) a{
+    transition: 0.5s 0.4s;
+  }
+  .nav-list li:nth-child(3) a{
+    transition: 0.5s 0.6s;
+  }
+
+  .nav.active .nav-list{
+    clip-path: circle(1500px at 90% -15%);
+    pointer-events: all;
+  }
+
+  .nav.active .nav-list a{
+    opacity: 1;
+  }
+
+  .nav.active .hamburguer{
+    position: fixed;
+    top: 26px;
+    right: 16px;
+    border-top-color: transparent;
+  }
+
+  .nav.active .hamburguer::before{
+    transform: rotate(135deg);
+    
+  }
+  .nav.active .hamburguer::after{
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}

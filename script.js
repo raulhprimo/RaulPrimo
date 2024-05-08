@@ -15,10 +15,15 @@ linksInternos.forEach((link) =>{
 
 function fixNavbar(){
   window.addEventListener('scroll', function(){
-  let navbar = document.getElementById('navbar')
-  let navbarList = document.getElementById('navbar-list')
-  navbar.classList.toggle('active', window.scrollY > 1)
-  navbarList.classList.toggle('active', window.scrollY > 1)
+  let header = document.querySelector('.header')
+  header.classList.toggle('active', window.scrollY > 1)
 })
 }
 fixNavbar()
+
+const hamrburguer = document.querySelector('.hamburguer')
+const nav = document.querySelector('.nav')
+
+hamrburguer.addEventListener('click', () => {
+  nav.classList.toggle('active')
+})
