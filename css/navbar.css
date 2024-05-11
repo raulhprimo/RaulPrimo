@@ -67,13 +67,23 @@
     z-index: 2;
   }
 
+  .header.active .nav-list{
+    background: rgba(255, 215, 0, 0.71);
+  }
+
   .nav-list{
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: #FFD700; 
+
+    /* From https://css.glass */
+    background: rgba(43, 50, 60, 0.82);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.8px);
+    -webkit-backdrop-filter: blur(0.8px);
+
     clip-path: circle(100px at 90%  -30%);
     transition: 1s ease-out;
     z-index: 1;
